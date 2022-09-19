@@ -1,15 +1,122 @@
 .body {
   min-height: 30000px;
 }
+
+#grad {
+  background-image: linear-gradient(rgb(113, 0, 219), rgb(237, 32, 0));
+}
+
 .jumbotron {
-  padding-top: 7rem;
-  background-color: #bdccfc;
+  padding-top: 2rem;
+  /* background-color: #d895ff; */
+  background-image: linear-gradient(#9900ef, #eb144c);
+  /* background-color: #e2edff; */
+}
+.display-4 {
+  padding-top: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: antiquewhite;
+}
+
+.lead {
+  padding-top: 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(250, 216, 216);
 }
 
 #galery {
-  background-color: #bdccfc;
+  /* background-color: #9900ef; */
+  background-image: linear-gradient(#9900ef, #eb144c);
+  /* #EB144C */
 }
 
 section {
   padding-top: 6rem;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.img-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(5, 5, 5, 0.5); */
+  background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgba(5, 5, 5.1));
+  top: 265px;
+  transition: all 0.5s ease-out;
+}
+
+.img-title h4 {
+  text-align: center;
+  color: #fff;
+  line-height: 2px;
+  position: relative;
+  top: 200px;
+  text-shadow: 1px 1px rgba(5, 5, 5, 0.5);
+}
+
+.card:hover .img-title {
+  top: 180px;
+  transition: all 0.3s ease-out;
+}
+
+.card img {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+.card:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in;
+}
+a {
+  line-height: 0;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(5, 5, 5, 0);
+  z-index: 100;
+  text-align: center;
+  padding: 200px 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.1s ease-out;
+}
+.overlay img {
+  width: 30%;
+  margin: auto 0;
+}
+.overlay:target {
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  background-color: rgba(5, 5, 5, 0.8);
+  transition: all 0.3s ease-in;
+}
+
+/* kontak */
+/* .col a {
+  display: flex;
+  position: center;
+  overflow: hidden;
+} */
+.col a {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+.col a {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in;
+}
+.col a:hover img {
+  transform: scale(0.8);
+  transition: all 0.3s ease-in;
 }
