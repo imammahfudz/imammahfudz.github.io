@@ -23,12 +23,42 @@
 
   <body id="$home">
     <!-- NAVBAR -->
-    <!-- <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background-color: #83009a">
+    <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background-color: #83009a">
       <div class="container">
         <a class="navbar-brand" href="#">My Portofolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
+
+        
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header" style="background-color:#ec30a4">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" style="background-color:#9900ef">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Tentang Saya</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeri">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <!-- </div>
+</nav> -->
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -46,33 +76,8 @@
           </ul>
         </div>
       </div>
-    </nav> -->
-    
-    <nav class="navbar navbar-expand-md navbar-dark shadow-sm" style="background-color: #83009a">
-  <div class="container">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">Tentang Saya</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#galery">Galeri</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#kontak">Kontak</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+      </div>
+    </nav>
     <!-- AKHIR NAVBAR -->
 
     <!-- JUMBOTRON -->
